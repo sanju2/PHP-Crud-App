@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $result = mysqli_query($con, $sql);
     if ($result) {
         // echo "Data added success";
-        header('location:display.php');
+        header('location:index.php');
     } else {
         die(mysqli_error($con));
     }
@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
                 <input type="text" class="form-control" placeholder="Enter Password" name="password" autocomplete="off">
             </div>
             <button type="submit" class="btn btn-primary" name="submit">Submit</button>
-            <button class="btn btn-dark"><a href="display.php" class="text-light">Back</a></button>
+            <button class="btn btn-dark"><a href="index.php" class="text-light">Back</a></button>
         </form>
     </div>
 </body>
