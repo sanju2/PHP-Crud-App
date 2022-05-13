@@ -1,5 +1,5 @@
 <?php
-$con = new mysqli('localhost', 'root', '', 'crudoperation');
+$con = new mysqli('Endpoint', 'UserName', 'Password', 'DatabaseName');
 if (!$con) {
     die(mysqli_error($con));
 }

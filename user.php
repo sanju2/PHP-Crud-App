@@ -8,7 +8,8 @@ if (isset($_POST['submit'])) {
     $sql = "insert into crud (name,email,mobile,password) values('$name','$email','$mobile','$password')";
     $result = mysqli_query($con, $sql);
     if ($result) {
-        echo "Data added success";
+        // echo "Data added success";
+        header('location:display.php');
     } else {
         die(mysqli_error($con));
     }
@@ -49,6 +50,7 @@ if (isset($_POST['submit'])) {
                 <input type="text" class="form-control" placeholder="Enter Password" name="password" autocomplete="off">
             </div>
             <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+            <button class="btn btn-dark"><a href="display.php" class="text-light">Back</a></button>
         </form>
     </div>
 </body>
