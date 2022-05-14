@@ -1,5 +1,5 @@
 <?php
-$con = new mysqli('php-crud-app.cfvufltihmhv.us-east-2.rds.amazonaws.com', 'admin', 'Pa$$w0rd1996test', 'crudoperation');
+$con = new mysqli('DBHost', 'UserName', 'Password', 'DBName');
 if (!$con) {
     die(mysqli_error($con));
 }
