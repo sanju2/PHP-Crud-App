@@ -4,6 +4,8 @@
 ```sh
 create table crud(id INT AUTO_INCREMENT,name VARCHAR(100),email VARCHAR(100),mobile VARCHAR(20),password VARCHAR(20),PRIMARY KEY (id));
   ```
+## Architecture Diagram
+![Diagram](Architecture%20Diagram.png)
 
 ### Home Page
 ![Home Page](Screenshots/HomePage.jpg)
